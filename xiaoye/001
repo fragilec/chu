@@ -11,7 +11,7 @@ const path6 = '/v1/user/myinfo/my';
 const path7 = '/v1/goods/validDownload';
 const path8 = '/v1/mydesk/overview';
 if (url.indexOf(path1) != -1) {
-    	var body = $response.body.replace(/"sub_status":"1"/g, '"sub_status":"0"').replace(/未订阅/g, '已订阅').replace(/"subscribe_status":0/g, '"subscribe_status":1');
+    	var body = $response.body.replace(/"sub_status":"1"/g, '"sub_status":"0"').replace(/"未订阅"/g, '"已订阅"').replace(/"subscribe_status":0/g, '"subscribe_status":1');
 }
 if (url.indexOf(path2) != -1) {
     var body = $response.body.replace(/"buyButtonStatus":"1"/g, '"buyButtonStatus":"0"').replace(/"canDownload":"0"/g, '"canDownload":"1"');
