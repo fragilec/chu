@@ -1,2 +1,2 @@
-var body = $response.body.replace(/"is_vip":0/g, 'is_vip":1').replace(/vip_expired":true/g, 'vip_expired":false');
+var body = $response.body.replace(/is_vip":0/g, 'is_vip":1').replace(/vip_expired":true/g, 'vip_expired":false');
 $done({ body });
