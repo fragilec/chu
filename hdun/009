@@ -1,9 +1,0 @@
-
-var body = $response.body;
-var url = $request.url;
-var obj = JSON.parse(body);
-const path5 = '/get_course_detail';
-if (url.indexOf(path5) != -1) {
-       var body = $response.body.replace(/"allow_play":\d/g, '"allow_play":1').replace(/"allow_download":\d/g, '"allow_download":1').replace(/"free_trial_info":[^}]+\}/g, '"free_trial_info":null');
-}
-$done({body});
