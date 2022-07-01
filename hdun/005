@@ -3,8 +3,6 @@ var url = $request.url;
 var obj = JSON.parse(body);
 const path5 = '/get_course_detail';
 if (url.indexOf(path5) != -1) {
-        obj.data.["course_meta"]["allow_play"] = 1;
-        obj.data.["course_meta"]["allow_download"] = 1;
-        body = JSON.stringify(obj);
+       var body = $response.body.replace(/"allow_play":\d/g, '"allow_play":1').replace(/"allow_download":\d/g, '"allow_download":1');
 }
 $done({body});
