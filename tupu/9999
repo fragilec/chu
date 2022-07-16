@@ -1,2 +1,0 @@
-var body = $response.body.replace(/.+/g, '{"msg":"success","code":0,"vip":{"combo_name":"VIP会员","level":{"send_top":0,"level_name":"终身VIP","send_home":0,"level_id":3,"share_money_bili":0.2,"group_down":0,"weight":3,"level_no":"LV3","tools":"","label_a":"永久会员"},"combo_code":"MB_VIP_V1","expire_time":"永久会员","mb_id":103221,"add_time":"2022-07-01 23:13:01","level_no":"LV3"}}');
-$done({ body });
