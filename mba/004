@@ -1,0 +1,2 @@
+var body = $response.body.replace(/Buy":false/g, 'Buy":true').replace(/trySee":false/g, 'trySee":true').replace(/percent":0/g, 'percent":10000');
+$done({body});
